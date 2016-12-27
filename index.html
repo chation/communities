@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>互动社区 - 分享你的快乐 ~　！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/learnBootstrap.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="icon" href="image/boot.ico"/>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/layout_for_page.js"></script>
+</head>
+<body style="padding-top: 50px">
+<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span class=" icon-cloud"></span> 互动社区</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="icon-comments"> 主页</span></a></li>
+                <li><a href="#"><span class="icon-envelope-alt"> 消息<span class="badge pull-right">3</span></span></a></li>
+                <li><a href="#"><span class="icon-suitcase"> 话题</span></a></li>
+                <li><a href="#"><span class="icon-camera"> 发现</span></a></li>
+            </ul>
+            <form class="pull-right navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input id="top-nav-search" type="text" class="form-control" placeholder="找人...">
+                </div>
+                <button type="submit" class="btn btn-primary">搜 索</button>
+            </form>
+        </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+</div>
+<!--主页面开始-->
+<div id="divMain" class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-4">
+            <div id="left-window">
+                <div id="user_info">
+                    <div id="user_head_top_img" style="background-image: url(image/user_head_img.png)"></div>
+                    <div style="text-align: center">
+                        <img class="user_head img-circle" src="image/20161223122910-192.168.1.109.jpg"
+                             alt="user head img">
+                    </div>
+                    <div style="padding-left: 15px;padding-right: 15px;text-align: center" class="caption">
+                        <h3 id="user-name">恰西</h3>
+                        <p>人生可以热烈如一场拳击，也可以轻盈如一场游戏</p>
+                        <p>
+                            <a href="#" class="btn btn-warning" role="button">关 注</a>
+                            <a href="#" class="btn btn-success" role="button">私 信</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 左窗口-->
+        <div class="col-md-6 col-sm-8">
+            <div id="center-window">
+                <div id="textBox_new">
+                <textarea id="textBox-input" prefix type="text" class="form-control"
+                          placeholder="有什么开心的事，快告诉你的朋友们吧~"></textarea>
+                    <div id="button-textBox">
+                        <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-default"><span class="icon-star"></span> 表情</button>
+                            <button type="button" class="btn btn-default"><span class="icon-camera"></span> 图片</button>
+                            <button type="button" class="btn btn-default"><span class="icon-comment"></span> 话题</button>
+                        </div>
+                        <a href="#" class="btn btn-success pull-right" role="button">发 表</a>
+                    </div>
+                </div>
+            </div>
+            <div class="active-main">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <a href="javascript:void(0)"><img class="img-responsive img-circle"
+                                                          src="image/20161223122910-192.168.1.109.jpg"
+                                                          alt="user head img"></a>
+                    </div>
+                    <div class="col-xs-10">
+                        <div class="">
+                            <div class="">
+                                <small class="pull-right">4 分钟</small>
+                                <h4><a href="javascript:void(0)">恰西</a></h4>
+                            </div>
+                            <p class="user-text">
+                                JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="active-main">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <a href="javascript:void(0)"><img class="img-responsive img-circle" src="image/gouzei.jpg"
+                                                          alt="user head img"></a>
+                    </div>
+                    <div class="col-xs-10">
+                        <div class="">
+                            <div class="">
+                                <small class="pull-right">12 分钟</small>
+                                <h4><a href="javascript:void(0)">炉石萌萌哒的狗贼丶</a></h4>
+                            </div>
+                            <p class="user-text">
+                                我打炉石真菜!远远没有恰西同学一半厉害,唉,好气啊!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="active-main">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <a href="javascript:void(0)"><img class="img-responsive img-circle" src="image/qdwxj.jpg"
+                                                          alt="user head img"></a>
+                    </div>
+                    <div class="col-xs-10">
+                        <div class="">
+                            <div class="">
+                                <small class="pull-right">33 分钟</small>
+                                <h4><a href="javascript:void(0)">晴天</a></h4>
+                            </div>
+                            <p class="user-text">
+                                哇！连续两天开传说！人品爆表！！！
+                            </p>
+                            <div class="user_text_img">
+                                <img class="img-responsive" src="image/img1.png"/>
+                                <img class="img-responsive" src="image/img2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 主窗口-->
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>提示：</strong> 注册成为我们的一员，你将拥有更大的朋友圈，更宽广的视角...
+            </div>
+            <div id="inputBox">
+                <h3>还没有帐号?</h3>
+                <p>填写以下信息加入我们吧~!</p>
+                <form id="form1">
+                    <p>
+                    <div id="div-user_name" class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2"><i
+                                class="glyphicon glyphicon-user"></i></span>
+                        <input required id="user_name" type="text" class="form-control" placeholder="你的昵称">
+                    </div>
+                    </p>
+                    <p>
+                    <div id="div-email_address" class="input-group">
+                        <span class="input-group-addon"><i class="icon-envelope"></i></span>
+                        <input id="email_address" class="form-control" type="text" placeholder="邮箱地址">
+                    </div>
+                    </p>
+                    <p>
+                    <div id="div-password" class="input-group">
+                        <span class="input-group-addon"><i class="icon-key"></i></span>
+                        <input id="password" class="form-control" type="password" placeholder="设置密码">
+                    </div>
+                    </p>
+                    <a id="login_to" class="btn btn-block btn-success">
+                        <i class="glyphicon glyphicon-log-in"></i> 注 册</a>
+                </form>
+                <p>　　</p>
+            </div>
+        </div><!-- 右窗口-->
+    </div>
+    <div style="height: 3000px"></div>
+</div><!-- 主窗口结束 -->
+<div id="bottomNav" class="bottom-tools" style="top: 600px; width: 67px;height:100%;visibility: hidden">
+    <div id="btn-nav" class="btn-group-vertical">
+        <div title="联系我们"><span class="icon-phone"></span></div>
+        <a href="https://github.com/chation" target="_blank">
+            <div title="访问在GitHub上的主页"><span class="icon-github-alt"></span></div>
+        </a>
+        <div title="扫一扫"><span class="glyphicon glyphicon-qrcode"></span></div>
+        <a style="visibility: hidden" id="sToTop">
+            <div title="返回顶部"><span class="icon-angle-up"></span></div>
+        </a>
+    </div>
+</div><!-- 侧面nav栏 -->
+<nav id="smallScreen-nav" class="navbar navbar-default navbar-fixed-bottom" role="navigation"
+     style="visibility: hidden">
+    <div class="row">
+        <div style="padding-top: 8px" class="col-xs-6">
+            <a href="#" class="btn btn-danger btn-block" role="button">注 册</a></div>
+        <div style="padding-top: 8px" class="col-xs-6">
+            <a href="#" class="btn btn-success btn-block" role="button">登 录</a></div>
+    </div>
+</nav><!-- 底部登陆栏-->
+</body>
+</html>
