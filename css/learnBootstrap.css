@@ -5,9 +5,6 @@
 body{
     background-color: #F6F9FA;
 }
-.navbar {
-    /*opacity: 0.9;*/
-}
 .bottom-tools {
     position: fixed;
     text-align: center;
@@ -37,6 +34,3 @@ body{
 .btn-group-vertical>div>span {
     line-height: 47px;
 }
-/*#top-nav-search:focus{*/
-    /*width:400px;*/
-/*}*/
