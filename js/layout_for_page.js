@@ -10,9 +10,11 @@ addLoadEvent(unCloth);
 /* 判断是否为空,更改相应样式 */
 function formClick() {
     var submit = document.getElementById("login_to");
+    var sendBtn = document.getElementById("sendMsg-btn");
     var psw = document.getElementById("password");
     var username = document.getElementById("user_name");
     var email = document.getElementById("email_address");
+    var sendMsg = document.getElementById("textBox-sendMsg");
     var classes = "";
     submit.addEventListener("click", function () {
         if (psw.value != "" && email.value != "" && username.value != "") {
@@ -34,6 +36,14 @@ function formClick() {
             }
         }
     }, false);
+    sendBtn.addEventListener("click",function(){
+        if(sendMsg.value == ""){
+            sendMsg.setAttribute("placeholder","内容不能为空~!");
+        }else {
+            this.setAttribute("data-dismiss","modal");
+            //测试阶段默认成功
+        }
+    },false);
     var focus = function () {
         this.parentNode.setAttribute("class", "input-group");
     };

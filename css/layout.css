@@ -37,13 +37,16 @@
 #textBox_new{
     padding-bottom: 13px;
 }
-#textBox-input{
+.textBox-input{
     width:100%;
     height: 80px;
     resize: none;
 }
 #button-textBox{
     padding-top: 10px;
+}
+#user-photo-play{
+    margin-top: 10px;
 }
 .active-main{
     margin-top: 10px;
@@ -68,4 +71,41 @@
 .user_text_img>img {
     display: inline;
     width:45%;
+}
+
+/*QR标记*/
+#qrCode {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #e5e9ef;
+    position: absolute;
+    top: 41%;
+    right: 120%;
+    display: none;
+}
+#qrCode img {
+    width: 140px;
+    height: 140px;
+}
+/*两个三角形成尖角*/
+#qrCode:after {
+    border: 10px solid transparent;
+    border-left: 10px solid #e5e9ef;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    left: 100%;
+    top: 24%;
+}
+#qrCode:before {
+    border: 10px solid transparent;
+    border-left: 10px solid #e5e9ef;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    left: 100%;
+    top: 24%;
 }
