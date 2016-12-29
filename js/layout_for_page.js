@@ -42,6 +42,7 @@ function formClick() {
         }else {
             this.setAttribute("data-dismiss","modal");
             //测试阶段默认成功
+
         }
     },false);
     var focus = function () {
@@ -83,6 +84,7 @@ function navPosition() {
 function navPositionResize() {
     window.addEventListener("resize", navPosition, false);
 }
+
 
 /* 构建window.onLoad能运行多个函数的函数 */
 function addLoadEvent(func) {
