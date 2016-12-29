@@ -1,6 +1,9 @@
 #divMain {
     margin-top: 14px;
 }
+.alert{
+    margin-bottom: 10px;
+}
 .user_head{
     width:35%;
     height: 35%;
@@ -27,12 +30,14 @@
     padding-left: 15px;
     border-radius: 2%;
 }
-#inputBox {
+
+#inputBox,#follow-list{
     background-color: #FFFFFF;
     border: 1px solid #e5e9ef;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 2%;
+    margin-bottom: 10px;
 }
 #textBox_new{
     padding-bottom: 13px;
@@ -72,10 +77,15 @@
     display: inline;
     width:45%;
 }
+.user_comment{
+    border-top: 1px solid #e5e9ef;
+}
+.user_comment_headImg{
+    padding-top: 8px;
+}
 
 /*QR标记*/
 #qrCode {
-    display: block;
     width: 140px;
     height: 140px;
     border: 1px solid #e5e9ef;
@@ -108,4 +118,16 @@
     content: ' ';
     left: 100%;
     top: 24%;
+}
+.ty{
+    padding-left: 0;
+}
+.tx {
+    margin-bottom: 10px;
+}
+.addFollow{
+    margin-top: 5px;
+}
+.tx>a>img {
+    border: 1px solid #e5e9ef;
 }
