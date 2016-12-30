@@ -22,3 +22,10 @@ $(function() {
         $("#qrCode").hide(300);
     });
 });
+
+/* 关闭广告 */
+$(function(){
+    $(".right_nav_ad_btn").click(function(){
+        $(".right_nav_ad").hide(500);
+    });
+});

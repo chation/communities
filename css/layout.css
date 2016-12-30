@@ -40,11 +40,20 @@
     border-radius: 2%;
     margin-bottom: 10px;
 }
-.right_ad{
+.right_nav_ad{
     background-color: #FFFFFF;
     border: 1px solid #e5e9ef;
     border-radius: 2%;
     margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.right_nav_ad_img{
+    margin-bottom: 7px;
+}
+.right_nav_ad_url{
+    margin-top: 5px;
 }
 #textBox_new{
     padding-bottom: 13px;
