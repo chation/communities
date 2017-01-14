@@ -139,3 +139,36 @@ function unCloth() {
         }
     }, false);
 }
+
+/* 发表微博 */
+function submit() {
+    var txt = document.getElementById("txtNew");
+    var center = document.getElementById("centerBox");
+    if(txt.value.trim() != ""){
+
+    }else{
+        removeElem("warningTip");
+        var tips = "不能发送空白内容！";
+        center.insertBefore(alertBox(tips, "warning"), center.childNodes[0]);
+    }
+}
+
+/* 新建提示框innerHTML */
+function alertBox(tip, color) {
+    var box = document.createElement("div");
+    box.setAttribute("id", "warningTip");
+    box.setAttribute("class", "alert alert-" + color + " alert-dismissible");
+    box.setAttribute("role", "alert");
+    box.innerHTML = "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>" + tip;
+    return box;
+}
+
+/* 删除指定id的元素 */
+function removeElem(elemId) {
+    if (document.getElementById(elemId)) {
+        var elem = document.getElementById(elemId);
+        elem.parentNode.removeChild(elem);
+    }
+}
+
+document.getElementById("submitNew").addEventListener("click",submit,false);

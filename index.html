@@ -11,8 +11,6 @@
     <link rel="icon" href="image/boot.ico"/>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/layout_for_page.js"></script>
-    <script src="js/otherFn.js"></script>
 </head>
 <body style="padding-top: 50px">
 <div class="navbar navbar-fixed-top navbar-default" role="navigation">
@@ -113,10 +111,10 @@
             </div>
 
         </div><!-- 左窗口-->
-        <div class="col-md-6 col-sm-8">
+        <div class="col-md-6 col-sm-8" id="centerBox">
             <div id="center-window">
                 <div id="textBox_new">
-                <textarea id="" prefix class="form-control textBox-input"
+                <textarea id="txtNew" prefix class="form-control textBox-input"
                           placeholder="有什么开心的事，快告诉你的朋友们吧~"></textarea>
                     <div id="button-textBox">
                         <div class="btn-group btn-group-sm">
@@ -124,7 +122,7 @@
                             <button type="button" class="btn btn-default"><span class="icon-camera"></span> 图片</button>
                             <button type="button" class="btn btn-default"><span class="icon-comment"></span> 话题</button>
                         </div>
-                        <a href="#" class="btn btn-success pull-right" role="button">发 表</a>
+                        <a id="submitNew" href="#" class="btn btn-success pull-right" role="button">发 表</a>
                     </div>
                 </div>
             </div>
@@ -531,5 +529,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
+<script src="js/layout_for_page.js"></script>
+<script src="js/otherFn.js"></script>
 </body>
 </html>
